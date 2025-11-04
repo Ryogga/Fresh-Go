@@ -163,4 +163,87 @@ nav a:hover {
   text-align: center; /* CENTRA el texto */
   margin-bottom: 30px;
 }
+.promo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.promo-img {
+  width: 120px;   /* ajusta tamaño */
+  height: auto;
+}
+
+.promo-box {
+  background-color: #ff9c2a;
+  border-radius: 25px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: fit-content;
+  margin: 40px auto;
+}
+
+.promo-text {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.promo-text .linea1,
+.promo-text .linea3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.nuevas {
+  background-color: red;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 15px;
+  font-size: 34px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.promo-redes {
+  text-align: center;
+  color: #FFF4A4;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.promo-img.in-box {
+  width: 200px;
+  height: auto;
+}
+
+/* Ajuste posición para empujarlas dentro */
+.promo-img.left {
+  margin-right: -10px;
+}
+
+.promo-img.right {
+  margin-left: -10px;
+}
+/* Animación para imágenes dentro del cuadro naranja */
+.promo-img.in-box {
+  width: 200px; 
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease; /* suavidad de movimiento */
+}
+
+/* Efecto al pasar el mouse */
+.promo-img.in-box:hover {
+  transform: scale(1.15); /* agranda la imagen */
+  filter: brightness(1.1); /* la hace más brillante */
+}
+
+
+
 

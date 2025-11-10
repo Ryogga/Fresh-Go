@@ -78,8 +78,8 @@ nav a:hover {
 }
 
 .categoria {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -88,13 +88,13 @@ nav a:hover {
 }
 
 .categoria img {
-  width: 120px;
+  width: 200px;
   height: auto;
 }
 
 .categoria p {
   margin-top: 10px;
-  font-size: 28px;
+  font-size: 38px;
   font-weight: bold;
   color: white;
 }
@@ -242,6 +242,243 @@ nav a:hover {
 .promo-img.in-box:hover {
   transform: scale(1.15); /* agranda la imagen */
   filter: brightness(1.1); /* la hace más brillante */
+}
+.cuadro-verde {
+  background-color: #098609;   /* color verde */
+  width: 100%;                 /* ocupa todo el ancho */
+  height: 300px;               /* alto del cuadro (puedes cambiarlo) */
+  display: flex;               /* centra el texto */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;            /* espacio superior */
+}
+
+/* Texto grande */
+.texto-banner {
+  color: white;
+  font-size: 100px;            /* tamaño del texto */
+  font-weight: bold;
+  text-transform: uppercase;   /* mayúsculas */
+  letter-spacing: 5px;         /* espacio entre letras */
+  margin: 0;
+}
+
+/* Opcional: efecto animado al pasar el mouse */
+.texto-banner:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+.cuadro-verde {
+  background-color: #098609;
+  background-image: radial-gradient(circle at top left, #0aa50a, #066d06);
+  color: white;
+  padding: 60px 40px 30px;
+  margin-top: 60px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cada columna */
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Logo a la izquierda */
+.logo-footer {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+}
+
+.logo-footer img {
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+.slogan {
+  font-size: 18px;
+  font-style: italic;
+  color: #ffffff;
+  max-width: 250px;
+}
+
+/* Títulos */
+.footer-col h3 {
+  font-size: 24px;
+  border-bottom: 3px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* Texto general */
+.footer-col p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+/* Lista de links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+/* Línea inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 2px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-footer {
+    text-align: center;
+  }
+
+  .footer-col h3 {
+    border: none;
+  }
+}
+.footer-bottom {
+  width: 100%;
+  text-align: center;           /* Centra el texto */
+  margin-top: 50px;             /* Espacio desde las columnas superiores */
+  border-top: 2px solid rgba(255,255,255,0.3); /* Línea decorativa */
+  padding-top: 15px;            /* Espaciado interior */
+  font-size: 14px;
+  color: #FFFCE8;
+}
+.cuadro-verde {
+  display: flex;
+  flex-direction: column;  /* Hace que los hijos (contenedor y bottom) se apilen verticalmente */
+  align-items: center;     /* Centra horizontalmente los elementos */
+}
+.footer-contact p {
+  font-weight: bold;      /* Negrita */
+  line-height: 1.8;       /* Espacio entre líneas (ajusta según gusto) */
+  margin: 5px 0;          /* Margen superior e inferior para separar párrafos */
+  color: #FFFCE8;         /* Mantiene el color blanco del footer */
+}
+.footer-contact p {
+  line-height: 1.8;
+  margin: 5px 0;
+  color: #FFFCE8;
+}
+/* Título igual a Links de interés */
+.footer-contact h3 {
+  font-size: 24px;
+  border-bottom: 3px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* Lista de contacto igual que los links */
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  margin-bottom: 10px;
+}
+
+.footer-contact ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;  /* igual que links de interés */
+  transition: color 0.3s ease;
+}
+
+.footer-contact ul li a:hover {
+  color: #ffffff;
+}
+.carrito-container {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 300px;
+  background-color: #fff;
+  border: 2px solid #098609;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.carrito-container h2 {
+  color: #098609;
+  margin-bottom: 15px;
+}
+
+#carrito-lista {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+#carrito-lista li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#carrito-total {
+  font-weight: bold;
+}
+
+#vaciar-carrito {
+  background-color: #098609;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#vaciar-carrito:hover {
+  background-color: #066d06;
 }
 
 
